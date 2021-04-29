@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Pousada Condomínio Beira Mar</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="site desenvolvido para uma pousada localizada na cidade de quintao rio grande do sul">
+	<meta name="keywords" content="POUSADA, PRAIA, QUINTAO, VERAO, INVERNO, TEMPORADA, QUARTOS, SALA, GARAGEM, CHURRASQUEIRA, HOSPEDAGEM, ESTADIA, BEIRA, MAR, LAGOA, RIO, LAGO, AÇUDE">
+	<meta name="author" content="Lucas Kiess/Douglas Rodrigues">
+	<link rel="shortcut icon" href="img/icone.png">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	
+</head>
+	<body>
+		<div class="container-fluid">
+			
+			<div class="row">
+				<div id="logotipo" class="col-sm-3 col-xs-12">
+					<img src="img/logo.png" id="logo" alt="logotipo">
+				</div>
+				<div id="header" class="col-sm-8 col-xs-12">
+					<h1 id="titulo">Pousada Condominio Beira Mar</h1>
+					<input type="checkbox" id="bt_menu">
+					<label for="bt_menu">&#9776;</label>
+					<nav class="menu">
+						<ul>
+							<li><a href="home.html" target="iframeConteudo">Home</a></li>
+							<li><a href="apartamentos.html" target="iframeConteudo">Apartamentos</a>
+								<!--<ul>
+									<li><a href="#">Azul</a></li>
+									<li><a href="#">Vermelho</a></li>
+									<li><a href="#">Verde</a></li>
+									<li><a href="#">Amarelo</a></li>
+								</ul>-->
+							</li>
+							<li><a href="galeria.html" target="iframeConteudo">Galeria</a></li>
+							<li><a href="contato.html" target="iframeConteudo">Contato</a></li>
+							<li><a href="sobre.html" target="iframeConteudo">Sobre</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-sm-1 d-none d-sm-block embranco"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-1 d-none d-sm-block embranco">
+					
+				</div>
+
+				<div id="conteudo" class="col-sm-7 col-xs-12">
+					<iframe id="iframeConteudo" name="iframeConteudo" src="home.html" height="690" style="width: 100%; overflow: hidden;"></iframe>
+				</div>
+				
+				<div id="aside" class="col-sm-3 d-none d-sm-block" style="overflow: auto; width: auto;">
+					<br>
+					<h3 id="asideTitulo">-Importante-</h3>
+					<!--<iframe scrolling="no" marginwidth="0" marginheight="0" src="www.google.com" width="100%" height="150" frameborder="1" name="prev"></iframe>-->
+					<ul>
+						<li>Não aceitamos animais;</li>
+						<li>Cozinha básica para refeições;</li>
+						<li>Banheiro privativo;</li>
+						<li>Televisão;</li>
+						<li>Churrasqueira privativa e comunitária;</li>
+						<li>Ambiente familiar e respeitoso;</li>
+						<li>Sua educação será um diferencial para as próximas reservas.</li>
+					</ul>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.726462866713!2d-50.274213670811086!3d-30.353625498860666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95181e0f946ed1d7%3A0xc9034858be508191!2sR.+Licurgo%2C+7%2C+Palmares+do+Sul+-+RS%2C+95540-000!5e0!3m2!1spt-BR!2sbr!4v1560257592114!5m2!1spt-BR!2sbr" height="280" style="border:0;width: 100%; overflow: hidden;" allowfullscreen name="mapa"></iframe>
+				</div>
+				<div class="col-sm-1 d-none d-sm-block embranco">
+					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-1 d-none d-sm-block embranco"></div>
+				<div id="footer" class="col-10">
+					<h5 style="font-weight: bold;">Rua Licurgo, nº 7 - Beira Mar - Rei do Peixe - RS</h5>
+					<!--<img src="img/cartao.png" id="imgCartao">-->
+					<h5 id="textDev">©Desenvolvido por Douglas Rodrigues e Lucas Kiess - PPI 2019/1 - FAQI</h5>
+				</div>	
+				<div class="col-sm-1 d-none d-sm-block embranco"></div>
+			</div>
+		</div>
+
+	</body>
+
+
+</html>

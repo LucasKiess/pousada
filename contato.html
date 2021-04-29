@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Contato</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estiloForm.css">
+</head>
+<body>
+	<div id="row">
+		<!--<div class="col-lg-8 col-md-8 col-xs-12" id="local">
+			<h3 style="text-align: center;">Localização:</h3> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.726462866713!2d-50.274213670811086!3d-30.353625498860666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95181e0f946ed1d7%3A0xc9034858be508191!2sR.+Licurgo%2C+7%2C+Palmares+do+Sul+-+RS%2C+95540-000!5e0!3m2!1spt-BR!2sbr!4v1560257592114!5m2!1spt-BR!2sbr" width="100%" height="280" frameborder="0" style="border:0" allowfullscreen id="mapa"></iframe>	
+		</div>-->
+	</div>
+	<hr>
+	<div id="row">
+		<div class="col-lg-8 col-md-8 col-xs-12" id="local">
+			<h3 style="text-align: center;">Telefone:</h3>
+			<h4 style="text-align: center;">(51) 9 9175-2901</h4>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-sm-8" id="formulario">
+			<form action="processa.php" method="POST" accept-charset="utf-8">
+				<fieldset>
+					<legend class="tituloField">Deixe seu interesse:</legend>
+					<br><br>
+						<label for="nome">Nome:</label>
+						<input type="text" name="nome" class="ipNome" placeholder="Digite seu nome" alt="Nome" maxlength="50" required autofocus>
+						<br>
+						<br>
+						<label for="idade">Idade:</label>
+						<input type="text" name="idade" class="ipIdade" placeholder="Digite sua idade" alt="Idade" maxlength="2" required>
+						<br>
+						<br>
+						<label for="telefone">Telefone:</label>
+						<input type="phone" name="telefone" class="ipTel" placeholder="Digite seu telefone" alt="Telefone" maxlength="15" required>
+						<br>
+						<br>
+						<label for="email">Email:</label>
+						<input type="mail" name="email" class="ipEmail" placeholder="Digite seu e-mail" alt="Email" maxlength="60" required>
+						<br>
+						<br>
+						<label for="dataInteresse">Mês de interesse:</label>
+						<input type="text" name="dataInteresse" placeholder="Digite o mês de interesse" alt="Mês de Interesse" maxlength="8" required>
+						<br>
+						<br>
+						<label for="mensagem">Mensagem:</label>
+						<textarea name="mensagem" maxlength="300" cols="20" rows="5" placeholder="Digite sua mensagem de até 300 caractéres"></textarea>
+						<br>
+						<br>
+						<input type="submit" name="btnEnviar" class="btnEnvia" value="Enviar">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="reset" name="btnLimpar" class="btnLimpa" value="Limpar">
+					</table>
+				</fieldset>
+			</form>
+		</div>
+	</div>	
+	<hr>
+	
+</body>
+</html>

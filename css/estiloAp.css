@@ -1,0 +1,36 @@
+*{
+	background-color: #E0E6F8;
+}
+h2{
+	text-align: center;
+	font-size: 35px;
+	color: #2A0A12;
+	font-family: Impact, fantasy;
+	font-weight: bold;
+}
+h3{
+	font-family: cursive;
+	padding: 2px;
+	margin-left: 10px;
+	font-size: 25px;
+	font-style: italic;
+}
+p.descricao{
+	float: none;
+	text-indent: 30px;
+	font-family: Verdana;
+}
+.primeiroNivel{
+	font-family: Verdana;
+	font-size: 15px;
+	background-color: #A4A4A4;
+	border-radius: 5px;
+	list-style: circle;
+	font-weight: bold;
+}
+.segundoNivel{
+	font-family: Verdana;
+	font-size: 12px;
+	list-style: square;
+	font-weight: lighter;
+}

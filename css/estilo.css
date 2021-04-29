@@ -1,0 +1,395 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.row{
+		background: url("../img/background.png");
+		
+		background-attachment: fixed;
+		background-size: 500px;
+	}
+	#container-fluid{
+		background: url("../img/background.png");
+		background-attachment: scroll;
+	}
+	#logotipo{
+		height:240px;
+		background: url("../img/background.png");
+		background-attachment: fixed;
+	}	
+	#header{
+		height: 240px;
+		border-radius: 90px 90px 20px 20px;
+	}
+	#conteudo{
+		background: url("../img/backContent.jpg");
+		min-height: 700px;
+		float: left;
+		border: 2px solid white;
+		position: relative;
+		border-radius: 20px 0px 0px 0px;
+
+	}
+	#aside{
+		background-color:  #EEE8AA;
+		height: 730px;
+		border-radius: 0px 20px 0px 0px;
+		border: 2px solid white;
+	}
+	#aside ul li{
+		padding: 2px;
+		text-align: left;
+		font-size: 15px;
+		float: none;
+	}
+	#footer{
+		background-color:  #EEE8AA;
+		height: 60px;
+		text-align: center;
+
+		border: 1px solid white;
+		border-radius: 0px 0px 20px 20px;
+	}
+	#textDev{
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	div.embranco{
+		background: url("../img/background.png");
+		min-height: 50px;
+
+	}
+	#titulo{
+		font-family: Impact, fantasy;
+		font-weight: bold;
+		text-shadow: 0.1em 0.1em 0.02em white;
+		color: #2A0A12;
+	}
+	#asideTitulo{
+		font-size: 40px;
+		color: #424242;
+		text-align: center;
+		font-family: DejaVu Sans Mono, monospace;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+	#imgCartao{
+		width: 250px;
+		height: 50px;
+		float: none;
+	}
+	#iframeConteudo{
+		margin-top: 10px;
+		margin-bottom: 5px;
+		background-color: white;
+		border-radius: 10px;
+		border: 5px solid black;
+	}
+	/*componentes do menu*/
+	nav.menu{
+		width: 100%;
+		height: 35px;
+	}
+	nav.menu ul{
+		list-style: none;
+		position: relative;
+	}
+	nav.menu ul li{
+		width: 150px;
+		float: left;
+		font-family: Bradley Hand, cursive;
+	}
+	nav.menu a{
+		padding: 5px;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		background-color: #82FA58;
+		color: black;
+		border-radius: 10px;
+	}
+	nav.menu a:hover{
+		background-color: #81BEF7;
+		border-radius: 20px;
+	}
+	label[for="bt_menu"]{
+		padding: 0px;
+		background-color: #2E2E2E;
+		color: white;
+		text-align: center;
+		font-size: 30px;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		display: none;
+		border-radius: 20px;
+	}
+	#bt_menu{
+		display: none;
+	}
+	/*fim do menu*/ 
+
+	/*-----------------------------------------------------------------------------*/
+	/*COMEÇO DAS MEDIAS QUERIES*/
+
+	@media (min-width: 200px) and (max-width: 576px){
+		#logotipo{
+			height: 100px;
+		}
+		#logo{
+			width: 150px;
+			height: 100px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#header{
+			height: 180px;
+			text-align: center;
+		}
+		#titulo{
+			font-size: 18px;
+			margin-top: 20px;
+
+		}
+		#conteudo{
+			margin-top: 10px;
+			border-radius: 20px 20px 0px 0px;
+			background-color: #E0E6F8;
+		}
+		#footer{
+			min-width: 100%;
+			min-height: 90px;
+		}
+		label[for="bt_menu"]{
+			display: block;
+			float: none;
+		}	
+		#bt_menu:checked ~ .menu{
+			margin-left: 0;
+			margin-top: 20px;
+		}
+
+		nav.menu{
+			margin-top: 0px;
+			margin-left: -200%;
+			transition: all .4s;
+		}
+		nav.menu ul li{
+			width: 75px;
+			min-height: 10px;
+			
+		}
+	}
+	
+	/*@media (max-width: 576px){
+		#logotipo{
+			height: 120px;
+		}
+		#header{
+			height: 150px;
+			text-align: center;
+		}
+		#footer{
+			height: 150px;
+		}
+		#logo{
+			width: 150px;
+			height: 100px;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#titulo{
+			font-size: 20px;
+			margin-top: 20px;
+
+		}
+		#footer{
+			min-width: 100%;
+		}
+		#footer h5{
+			font-size: 17px;
+		}
+		#imgCartao{
+			height: 30px;
+		}
+
+		
+		label[for="bt_menu"]{
+			display: block;
+		}	
+		#bt_menu:checked ~ .menu{
+			margin-left: 0;
+		}
+
+		.menu{
+			margin-top: 0px;
+			margin-left: -200%;
+			transition: all .4s;
+		}
+		.menu ul li{
+			width: 100%;
+			float: none;
+		}
+		.menu ul ul{
+			position: static;
+			overflow: hidden;
+			max-height: 0;
+			transition: all .4s;
+		}
+		.menu ul li:hover ul{
+			height: auto;
+			max-height: 200px;
+		}
+
+	}	*/
+
+	@media (min-width: 576px) and (max-width: 768px){
+		#logotipo{
+			height: 100px;
+		}
+		#header{
+			height: 190px;
+		}
+		#logo{
+			width: 100px;
+			height: 80px;
+			float: right;
+			margin-top: 5px;
+		}
+		#titulo{
+			font-size: 25px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		#asideTitulo{
+			font-size: 15px;
+		}
+		#aside ul li{
+			font-size: 10px;
+		}
+		#mapa{
+			width: 100%;
+		}
+		label[for="bt_menu"]{
+			display: block;
+			float: left;
+			margin-top: 20px;
+		}	
+		#bt_menu:checked ~ .menu{
+			margin-left: 0;
+		}
+		nav.menu{
+			margin-top: 40px;
+			margin-left: -200%;
+			transition: all .4s;
+		}
+		nav.menu ul li{
+			width: 70px;
+			height: 32px;
+		}
+}
+
+	@media (min-width: 768px) and (max-width: 992px){
+		#logotipo{
+			height: 140px;
+		}
+		#header{
+			height: 140px;
+		}
+		#logo{
+			width: 120px;
+			height: 130px;
+			float: right;
+			margin-top: 2px;
+		}
+		#titulo{
+			font-size: 30px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		#asideTitulo{
+			font-size: 20px;
+		}
+		#aside ul li{
+			font-size: 15px;
+		}
+		#mapa{
+			width: 100%;
+			height: 200px;
+		}
+		label[for="bt_menu"]{
+			display: block;
+			float: left;
+		}	
+		#bt_menu:checked ~ .menu{
+			margin-left: 0;
+		}
+		nav.menu{
+			margin-top: 5px;
+			margin-left: -200%;
+			transition: all .4s;
+		}
+		nav.menu ul li{
+			width: 80px;
+			
+		}
+	}
+	@media(min-width: 992px) and (max-width: 1200px){
+		#logotipo{
+			height: 180px;
+		}
+		#header{
+			height: 170px;
+		}
+		#logo{
+			width: 200px;
+			height: 150px;
+			float: right;
+		}
+		#titulo{
+			font-size: 35px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		#asideTitulo{
+			font-size: 25px;
+		}
+		#aside ul li{
+			font-size: 15px;
+		}
+		#mapa{
+			width: 100%;
+			height: 200px;
+		}
+		nav.menu{
+			margin-left: 35px;
+		}
+		nav.menu ul li{
+			width: 130px;
+			height: 32px;
+		}
+	}
+	@media (min-width: 1200px){
+		#logotipo{
+			height: 200px;
+		}
+		#header{
+			height: 180px;
+		}
+		#logo{
+			width: 220px;
+			height: 150px;
+			float: right;
+			margin-top: 20px;
+		}
+		#titulo{
+			font-size: 60px;
+			text-align: center;
+			margin-top: 20px;
+		}
+		nav.menu{
+			margin-left: 50px;
+		}
+	}

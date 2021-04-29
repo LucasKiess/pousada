@@ -1,0 +1,79 @@
+@charset "utf-8";
+body{
+	background-color: #E0E6F8;
+}
+#local{
+	float: none;
+}
+h3,h4{
+	font-family: Verdana;
+}
+
+label{
+	font-family: Verdana;
+	background-color: #E0E6F8;
+	border-radius: 10px;
+}
+
+input.ipNome{
+	margin-left: 20px;
+}
+input.ipIdade{
+	margin-left: 21px;
+}
+input.ipEmail{
+	margin-left: 15px;
+}
+
+.btnEnvia{
+	padding: 20px;
+	background-color: #2EFE2E;
+	border-radius: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Verdana;
+	border: 2px solid black;
+	cursor: pointer;
+}
+.btnEnvia:hover{
+	background-color: #9AFE2E;
+}
+
+.btnLimpa{
+	padding: 20px;
+	background-color: #FF0000;
+	border-radius: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Verdana;
+	border: 2px solid black;
+	cursor: pointer;
+}
+.btnLimpa:hover{
+	background-color: #FE2E2E;
+}
+.tituloField{
+	font-family: DejaVu Sans Mono, monospace; 
+	font-weight: bold;
+	font-size: 25px;
+	background-color: #E0E6F8;
+	border-radius: 10px;
+}
+#formulario{
+	
+	background-attachment: scroll;
+	border-radius: 20px;
+}
+
+
+@media (min-width: 100px) and (max-width: 576px){
+	input.ipTel{
+		margin-left: 10px;
+	}
+	.btnEnvia{
+		padding:10px;
+	}
+	.btnLimpa{
+		padding: 10px;
+	}
+}
